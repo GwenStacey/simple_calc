@@ -9,6 +9,9 @@ def add(a,b):
 def subtract(a,b):
     return a-b
 
+def multiply(a,b):
+    return a*b
+
 while True:
     print("Hello, what math can I do for you today?")
     selection = input("What math function should I run?")
@@ -20,5 +23,7 @@ while True:
         print(add(num1, num2))
     if selection =="subtract":
         print(subtract(num1, num2))
+    if selection =="multiply":
+        print(multiply(num1, num2))
     
         
