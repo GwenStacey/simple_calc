@@ -9,6 +9,6 @@ In this section, I'll describe using the calculator as soon as the basic functio
 - <s>Implement add</s>
 - <s>Implement subtract</s>
 - <s>Implement multiply</s>
-- Implement divide
+- <s>Implement divide</s>
 - Convert functions to take multiple arguments
 - Add GUI
