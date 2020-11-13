@@ -14,21 +14,43 @@ def multiply(a,b):
 
 def divide(a,b):
     return a/b
-
+result = None
 while True:
     print("Hello, what math can I do for you today?")
-    selection = input("What math function should I run?")
+    selection = input("""What math function should I run,
+    Or should I clear the previous result first?""")
     if selection == "end":
         break
+    if selection == "clear":
+        result = None
+        continue
     num1 = int(input("What's the first number I should use?"))
-    num2 = int(input("What's the second number I should use?"))
-    if selection == "add":
-        print(add(num1, num2))
-    if selection =="subtract":
-        print(subtract(num1, num2))
-    if selection =="multiply":
-        print(multiply(num1, num2))
-    if selection =="divide":
-        print(divide(num1, num2))
+    if result == None:
+        num2 = int(input("What's the second number I should use?"))
+
+    if selection == "add" and result == None:
+        result = add(num1, num2)
+        print(result)
+    elif selection == "add" and result is not None:
+        result = add(result, num1)
+        print(result)
+    if selection == "subtract" and result == None:
+        result = subtract(num1, num2)
+        print(result)
+    elif selection == "subtract" and result is not None:
+        result = subtract(result, num1)
+        print(result)
+    if selection == "multiply" and result == None:
+        result = multiply(num1, num2)
+        print(result)
+    elif selection == "multiply" and result is not None:
+        result = multiply(result, num1)
+        print(result)
+    if selection == "divide" and result == None:
+        result = divide(num1, num2)
+        print(result)
+    elif selection == "divide" and result is not None:
+        result = divide(result, num1)
+        print(result)
     
         

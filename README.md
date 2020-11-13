@@ -10,8 +10,8 @@ In this section, I'll describe using the calculator as soon as the basic functio
 - <s>Implement subtract</s>
 - <s>Implement multiply</s>
 - <s>Implement divide</s>
-- Save Result
-- Use Result to continue math
-- Clear Result
+- <s>Save Result</s>
+- <s>Use Result to continue math</s>
+- <s>Clear Result command</s>
 - Convert functions to take multiple arguments
 - Add GUI
