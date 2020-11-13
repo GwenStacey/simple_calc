@@ -7,12 +7,15 @@ def add(a,b):
     return a+b
 
 def subtract(a,b):
+    """This function subtracts b from a"""
     return a-b
 
 def multiply(a,b):
+    """This function multiplies a by b"""
     return a*b
 
 def divide(a,b):
+    """This function divides a by b"""
     return a/b
 result = None
 while True:
